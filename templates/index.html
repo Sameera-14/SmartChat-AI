@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartChat AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>✨ SmartChat AI</h1>
+            <p>Your Friendly AI Assistant</p>
+        </header>
+
+        <div id="chat-box">
+
+            <div class="welcome">
+                <h2>Welcome to SmartChat!</h2>
+                <p>Ask me anything. I'm here to help you.</p>
+            </div>
+
+        </div>
+
+        <form id="chat-form">
+
+            <input
+                type="text"
+                id="message"
+                placeholder="Type your message..."
+                autocomplete="off"
+                required
+            >
+
+            <button type="submit" id="send">
+                Send
+            </button>
+
+        </form>
+
+        <button id="new-chat" type="button">
+            New Chat
+        </button>
+
+        <p id="error-message"></p>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
